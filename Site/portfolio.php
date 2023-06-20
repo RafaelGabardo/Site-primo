@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
     <title>Index</title>
 </head>
 <body>
     <nav class="nav">
-        <section class="section section-nav">
+        <section class="section-nav">
             <div class="empty">
 
             </div>
@@ -18,11 +18,11 @@
                 </a>
             </div>
             <div class="div-nav">
-                <div class="div-list">
+                <div class="div-teste">
                     <ul class="list">
                         <div class="div-card">
                             <li>
-                                <a href="index.html">Início</a>
+                                <a href="index.php">Início</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -30,7 +30,7 @@
                         </div>
                         <div class="div-card">
                             <li>
-                                <a href="portfolio.html">Portfólio</a>
+                                <a href="portfolio.php">Portfólio</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="div-card">
                             <li>
-                                <a href="contato.html">Contato</a>
+                                <a href="contato.php">Contato</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -49,12 +49,5 @@
             </div>
         </section>
     </nav>
-    <header class="header" id="animate">
-        <section class="section section-header">
-            <div class="div-header">
-
-            </div>
-        </section>
-    </header>
 </body>
 </html>

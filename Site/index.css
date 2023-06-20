@@ -6,6 +6,11 @@ body{
     height: 100vh;
 }
 
+.section{
+    display: flex;
+    flex-direction: row;
+}
+
 nav{
     height: 10%;
     width: 100%;
@@ -42,7 +47,7 @@ nav{
     align-items: start;
 }
 
-.div-teste{
+.div-list{
     height: 80%;
     width: 100%;
 }
@@ -65,6 +70,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .div-card:hover{
@@ -79,4 +85,11 @@ nav{
 a{
     text-decoration: none;
     color: white;
+}
+
+.header{
+    height: 50%;
+    width: 100%;
+    background: url(Imagem-Gus-Nav.jpg);
+    background-size: 25% 100%;
 }

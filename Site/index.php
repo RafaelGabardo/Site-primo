@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="nav">
-        <section class="section-nav">
+        <section class="section section-nav">
             <div class="empty">
 
             </div>
@@ -18,11 +18,11 @@
                 </a>
             </div>
             <div class="div-nav">
-                <div class="div-teste">
+                <div class="div-list">
                     <ul class="list">
                         <div class="div-card">
                             <li>
-                                <a href="">Início</a>
+                                <a href="index.html">Início</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -30,7 +30,7 @@
                         </div>
                         <div class="div-card">
                             <li>
-                                <a href="">Portfólio</a>
+                                <a href="portfolio.html">Portfólio</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="div-card">
                             <li>
-                                <a href="">Contato</a>
+                                <a href="contato.html">Contato</a>
                             </li>
                         </div>
                         <div class="empty2">
@@ -49,5 +49,12 @@
             </div>
         </section>
     </nav>
+    <header class="header">
+        <section class="section section-header">
+            <div class="div-header">
+
+            </div>
+        </section>
+    </header>
 </body>
 </html>

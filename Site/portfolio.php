@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
-    <title>Index</title>
+    <title>Portfólio</title>
 </head>
 <body>
     <nav class="nav">
@@ -18,29 +18,29 @@
                 </a>
             </div>
             <div class="div-nav">
-                <div class="div-teste">
+                <div class="div-list">
                     <ul class="list">
-                        <div class="div-card">
-                            <li>
-                                <a href="index.php">Início</a>
-                            </li>
-                        </div>
+                        <a href="index.php">
+                            <div class="div-card">
+                                <li>Início</li>
+                            </div>
+                        </a>
                         <div class="empty2">
 
                         </div>
-                        <div class="div-card">
-                            <li>
-                                <a href="portfolio.php">Portfólio</a>
-                            </li>
-                        </div>
+                        <a href="portfolio.php">
+                            <div class="div-card">
+                                <li>Portfólio</li>
+                            </div>
+                        </a>
                         <div class="empty2">
 
                         </div>
-                        <div class="div-card">
-                            <li>
-                                <a href="contato.php">Contato</a>
-                            </li>
-                        </div>
+                        <a href="contato.php">
+                            <div class="div-card">
+                                <li>Contato</li>
+                            </div>
+                        </a>
                         <div class="empty2">
 
                         </div>

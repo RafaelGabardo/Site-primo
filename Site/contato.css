@@ -84,57 +84,88 @@ body{
 
 a{
     text-decoration: none;
-    color: #bdbebd;
+    color: #d3d3d3;
 }
 
 .header{
-    height: 50%;
+    height: 10%;
     width: 100%;
-    background: url(Imagem-Gus-Nav.jpg);
-    background-size: 25% 100%;
-}
-
-@keyframes img-change {
-    from {background: url(Imagem-Gus-Nav.jpg); background-size: 25% 100%;}
-    to {background: url(Imagem-Gus-Header.jpg); background-size: 25% 100%;}
+    color: #d3d3d3;
+    background-color: #545454;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
 }
 
 .section-header{
     height: 100%;
     width: 100%;
-    position: relative;
-    animation-name: img-change;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-}
-
-.main{
-    width: 100%;
-    height: 40%;
-    color: #bdbebd;
-    background-color: #3f3f3f;
-}
-
-.section-main{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.div-main{
-    width: 50%;
-    height: 100%;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.img-main{
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
+.main{
+    background-color: #808080;
+    color: #d3d3d3;
+    height: 75%;
+    width: 100%;
+}
+
+.section-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-card-main{
+    height: 85%;
+    width: 35%;
+    background-color: #191919;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-main{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-input{
+    background-color: #808080;
+    color: black;
+    box-shadow: none;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+.submit{
+    background-color: #808080;
+    color: black;
+    box-shadow: none;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+.footer{
+    color: #d3d3d3;
+    background-color: #3f3f3f;
+    height: 5%;
+    width: 100%;
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

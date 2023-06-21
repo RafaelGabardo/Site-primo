@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
-    <title>Index</title>
+    <title>Contato</title>
 </head>
 <body>
     <nav class="nav">
-        <section class="section-nav">
+        <section class="section section-nav">
             <div class="empty">
 
             </div>
@@ -18,7 +18,7 @@
                 </a>
             </div>
             <div class="div-nav">
-                <div class="div-teste">
+                <div class="div-list">
                     <ul class="list">
                         <div class="div-card">
                             <li>

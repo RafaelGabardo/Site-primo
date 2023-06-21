@@ -63,7 +63,7 @@
             </div>
             <div class="div-main">
                 <h1>Biografia</h1>
-                <p></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, reiciendis velit? At, distinctio quibusdam nemo ex vel neque natus. Molestiae in quidem qui maxime quas amet, possimus veniam corrupti quis!</p>
             </div>
         </section>
     </main>

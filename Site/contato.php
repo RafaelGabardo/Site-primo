@@ -1,3 +1,47 @@
+<?php
+    $dbtype = 'mysql';
+    $dbname = 'site-gus';
+    $username = 'root';
+    $servername = 'localhost';
+    $password = '';
+    $options = [
+        PDO::ATTR_PERSISTENT => TRUE,
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+    ];
+
+    $pdoConnection = $dbtype . ':host=' . $servername . ';dbname=' . $dbname;
+
+    try {
+        $conn = new PDO($pdoConnection, $username, $password, $options);
+    } catch(PDOException $e) {
+        echo 'Conexão falhou!' . $e->getMessage();
+    }
+
+    if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $telephone = $_POST['telephone'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        $sql = "
+            INSERT INTO
+                contacts
+                (`name`,`email`,`telephone`,`subject`,`message`,`created-at`)
+            VALUES
+                ('$name','$email','$telephone','$subject','$message',NOW())
+        ";
+
+        $query = $conn->prepare($sql);
+        $result = $query->execute();
+
+        if($result) {
+            echo 'Dados salvos com sucesso!';
+        } else {
+            echo 'Erro ao salvar!';
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -60,8 +104,8 @@
         <section class="section section-main">
             <div class="div-card-main">
                 <div class="div-main">
-                    <form class="contact-form" action="contato.php" method="$_POST" name="contact" >
-                        <label class="label" for="name">Insira seu nome:</label><br>
+                    <form class="contact-form" action="contato.php" method="post" name="contact">
+                        <label class="label" for="name">Insira seu nome completo:</label><br>
                         <input class="type-input" type="text" name="name"><br><br>
                         <label class="label" for="email">Insira seu e-mail:</label><br>
                         <input class="type-input" type="email" name="email"><br><br>

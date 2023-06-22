@@ -22,6 +22,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .empty{
@@ -41,15 +42,13 @@ body{
     height: 53.82px;
     width: 53.82px;
     border-radius: 50%;
-    margin-top: 3px;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
+    margin-top: 10px;
 }
 
 .div-list{
     height: 80%;
     width: 100%;
+    margin-top: 3px;
 }
 
 .list{
@@ -147,6 +146,10 @@ a{
     border-style: solid;
     border-color: black;
     border-radius: 8px;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit{

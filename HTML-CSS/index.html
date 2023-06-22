@@ -67,5 +67,12 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <section class="section section-footer">
+            <div class="div-footer">
+                <p>Gustavo Gabardo Lopes | Feito por Rafael Giroldo Gabardo</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

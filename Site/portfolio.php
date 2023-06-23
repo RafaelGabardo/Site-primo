@@ -49,5 +49,41 @@
             </div>
         </section>
     </nav>
+    <header class="header">
+        <section class="section section-header">
+            <div class="div-header">
+                <h1>Portfólio:</h1>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="section section-main">
+            <div class="div-main">
+                <div class="div-text">
+                    <h1>Cursos:</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate provident ad! Accusantium aspernatur blanditiis laudantium dolore facilis quasi in et nostrum, illo praesentium rem repellat distinctio porro aperiam tempore!</p>
+                </div>
+            </div>
+            <div class="div-main">
+                <div class="div-text">
+                    <h1>Trabalhos:</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate provident ad! Accusantium aspernatur blanditiis laudantium dolore facilis quasi in et nostrum, illo praesentium rem repellat distinctio porro aperiam tempore!</p>
+                </div>
+            </div>
+            <div class="div-main">
+                <div class="div-text">
+                    <h1>Músicas autorais:</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate provident ad! Accusantium aspernatur blanditiis laudantium dolore facilis quasi in et nostrum, illo praesentium rem repellat distinctio porro aperiam tempore!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section section-footer">
+            <div class="div-footer">
+                <p>Gustavo Gabardo Lopes | Feito por Rafael Giroldo Gabardo</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

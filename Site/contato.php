@@ -36,9 +36,19 @@
         $result = $query->execute();
 
         if($result) {
-            echo 'Dados salvos com sucesso!';
+            $to = 'rggabardo@gmail.com';
+            $txt = 'Telefone/celular: ' . $telephone . ' Mensagem: ' . $message;
+            $headers = 'From: ' . $email;
+
+            $emailSend = mail($to, $subject, $txt, $headers);
+
+            if($emailSend) {
+                echo 'Mensagem enviada com sucesso!';
+            } else {
+                echo 'Erro ao enviar!';
+            }
         } else {
-            echo 'Erro ao salvar!';
+            echo 'Erro!';
         }
     }
 ?>

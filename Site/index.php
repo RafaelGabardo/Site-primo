@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../HTML-CSS/index.css">
     <title>Index</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
             </div>
             <div class="div-nav">
                 <a href="https://www.instagram.com/gusgabardo/?hl=pt-br" target="_blank">
-                    <img class="img-nav" src="Imagem-Gus-Nav.jpg" alt="Gustavo tocando">
+                    <img class="img-nav" src="../Imagens/Imagem-Gus-Nav.jpg" alt="Gustavo tocando">
                 </a>
             </div>
             <div class="div-nav">
@@ -59,7 +59,7 @@
     <main class="main">
         <section class="section section-main">
             <div class="div-main">
-                <img class="img-main" src="Imagem-Gus-Main.jpg" alt="Gustavo no concerto do Deep Purple">
+                <img class="img-main" src="../Imagens/Imagem-Gus-Main.jpg" alt="Gustavo no concerto do Deep Purple">
             </div>
             <div class="div-main">
                 <h1>Biografia</h1>

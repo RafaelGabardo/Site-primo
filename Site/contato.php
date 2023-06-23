@@ -1,63 +1,13 @@
 <?php
-    $dbtype = 'mysql';
-    $dbname = 'site-gus';
-    $username = 'root';
-    $servername = 'localhost';
-    $password = '';
-    $options = [
-        PDO::ATTR_PERSISTENT => TRUE,
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
-    ];
-
-    $pdoConnection = $dbtype . ':host=' . $servername . ';dbname=' . $dbname;
-
-    try {
-        $conn = new PDO($pdoConnection, $username, $password, $options);
-    } catch(PDOException $e) {
-        echo 'Conexão falhou!' . $e->getMessage();
-    }
-
-    if(isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $telephone = $_POST['telephone'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        $sql = "
-            INSERT INTO
-                contacts
-                (`name`,`email`,`telephone`,`subject`,`message`,`created-at`)
-            VALUES
-                ('$name','$email','$telephone','$subject','$message',NOW())
-        ";
-
-        $query = $conn->prepare($sql);
-        $result = $query->execute();
-
-        if($result) {
-            $to = 'rggabardo@gmail.com';
-            $txt = 'Telefone/celular: ' . $telephone . ' Mensagem: ' . $message;
-            $headers = 'From: ' . $email;
-
-            $emailSend = mail($to, $subject, $txt, $headers);
-
-            if($emailSend) {
-                echo 'Mensagem enviada com sucesso!';
-            } else {
-                echo 'Erro ao enviar!';
-            }
-        } else {
-            echo 'Erro!';
-        }
-    }
+    require('../PHP-Puro/connect.php');
+    require('../PHP-Puro/insert.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="../HTML-CSS/contato.css">
     <title>Contato</title>
 </head>
 <body>
@@ -68,7 +18,7 @@
             </div>
             <div class="div-nav">
                 <a href="https://www.instagram.com/gusgabardo/?hl=pt-br" target="_blank">
-                    <img class="img-nav" src="Imagem-Gus-Nav.jpg" alt="Gustavo tocando">
+                    <img class="img-nav" src="../Imagens/Imagem-Gus-Nav.jpg" alt="Gustavo tocando">
                 </a>
             </div>
             <div class="div-nav">

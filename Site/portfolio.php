@@ -60,7 +60,7 @@
         <section class="section section-main">
             <div class="div-main">
                 <div class="div-text">
-                    <h1>Cursos:</h1>
+                    <h1>Certificados:</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate provident ad! Accusantium aspernatur blanditiis laudantium dolore facilis quasi in et nostrum, illo praesentium rem repellat distinctio porro aperiam tempore!</p>
                 </div>
             </div>

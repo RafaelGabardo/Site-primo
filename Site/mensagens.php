@@ -1,10 +1,14 @@
+<?php
+    require('../PHP-Puro/connect.php');
+    require('../PHP-Puro/insert.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
-    <title>Contato</title>
+    <link rel="stylesheet" href="mensagens.css">
+    <title>Mensagens</title>
 </head>
 <body>
     <nav class="nav">
@@ -52,32 +56,29 @@
     <header class="header">
         <section class="section section-header">
             <div class="div-header">
-                <h1>Contato:</h1>
+                <h1>Mande sua mensagem:</h1>
             </div>
         </section>
     </header>
     <main class="main">
         <section class="section section-main">
             <div class="div-card-main">
-                <a href="https://www.youtube.com/@gustavogabardo4490/featured" target="_blank">
-                    <img class="img-main" src="../Imagens/Logo-YouTube.jpg" alt="YouTube">
-                </a>
+                <div class="div-main">
+                    <form class="contact-form" action="mensagens.php" method="post" name="contact">
+                        <label class="label" for="name">Insira seu nome completo:</label><br>
+                        <input class="type-input" type="text" name="name"><br><br>
+                        <label class="label" for="email">Insira seu e-mail:</label><br>
+                        <input class="type-input" type="email" name="email"><br><br>
+                        <label class="label" for="telephone">Insira seu número de <br> telefone/celular:</label><br>
+                        <input class="type-input" type="tel" name="telephone" pattern="[0-9]{2}-[0-9]{4-5}-[0-9]{4}"><br><br>
+                        <label class="label" for="subject">Insira o assunto:</label><br>
+                        <input class="type-input" type="text" name="subject"><br><br>
+                        <label class="label" for="message">Insira sua mensagem:</label><br>
+                        <textarea class="type-input" name="message" id="message" cols="30" rows="4"></textarea><br><br>
+                        <input class="submit" type="submit" name="submit" placeholder="Enviar">
+                    </form>
+                </div>
             </div>
-            <div class="div-card-main">
-                <a href="" target="_blank">
-                    <img class="img-main" src="../Imagens/Logo-Spotify.png" alt="Spotify">
-                </a>
-            </div>
-            <div class="div-card-main">
-                <a href="https://www.instagram.com/gusgabardo/?hl=pt-br" target="_blank">
-                    <img class="img-main" src="../Imagens/Logo-Instagram.png" alt="instagram">
-                </a>
-            </div>
-        </section>
-        <section class="section section-main">
-            <form action="mensagens.php">
-                <input class="submit" type="submit" value="Envie sua mensagem!">
-            </form>
         </section>
     </main>
     <footer class="footer">

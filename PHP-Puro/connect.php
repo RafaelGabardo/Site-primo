@@ -1,4 +1,5 @@
 <?php  
+    // Declarando variáveis necessárias para a conexão com o banco de dados
     $dbtype = 'mysql';
     $dbname = 'site-gus';
     $username = 'root';
@@ -11,6 +12,7 @@
 
     $pdoConnection = $dbtype . ':host=' . $servername . ';dbname=' . $dbname;
 
+    // Realizando a conexão com o banco de dados pelo método "try"
     try {
         $conn = new PDO($pdoConnection, $username, $password, $options);
     } catch(PDOException $e) {
